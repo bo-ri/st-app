@@ -4,7 +4,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
+} from '@remix-run/react';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -24,10 +24,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+// global layout
 export default function App() {
   return <Outlet />;
 }
 
+// hydrating layout
 export function HydrateFallback() {
   return <p>Loading...</p>;
 }
